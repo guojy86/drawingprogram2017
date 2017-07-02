@@ -1,15 +1,16 @@
 ***Program information***
+
 This program is developed in Eclipse IDE with Java 8 by Jiayuan Guo. Junit 4 library is required to run to the unit test class. The project follows the below structure:
 
-|- src/main/java
-|-- solution/drawing
-|--- Canvas.java
-|--- CommandLineProcessor.java
-|--- Driver.java 
+* src/main/java
+    * solution/drawing
+        * Canvas.java
+        * CommandLineProcessor.java
+        * Driver.java 
 
-|- src/test/java
-|-- solution/drawing
-|--- CanvasTest.java
+* src/test/java
+    * solution/drawing
+        * CanvasTest.java
 
 __How to run the program__
 
