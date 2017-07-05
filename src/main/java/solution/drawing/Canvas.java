@@ -147,14 +147,18 @@ public class Canvas {
 			return;
 		}
 		
-		drawLine(x1, y1, x2, y1);
+		for (int i = x1 - 1; i < x2; i++) {
+			cells[y1 -1][i] = LINE_CHAR;
+		}
 		
 		for (int i = y1, j = y2 - 1; i < j; i++) {
 			cells[i][x1-1] = LINE_CHAR;
 			cells[i][x2-1] = LINE_CHAR;
 		}
 		
-		drawLine(x1, y2, x2, y2);
+		for (int i = x1 - 1; i < x2; i++) {
+			cells[y2 -1][i] = LINE_CHAR;
+		}
 		
 		drawCanvas();
 	}
